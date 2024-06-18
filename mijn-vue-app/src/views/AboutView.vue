@@ -1,4 +1,6 @@
 <template>
+  <ApiWeather/>
+
   <h1>Todo</h1>
 
   <label for="TodoItem">Fill in your todo</label> <!-- Line 2: Removed ':' from 'for' attribute -->
@@ -21,6 +23,7 @@
 <script setup>
 import { ref } from 'vue';
 import ListItem from "@/components/ListItem.vue";
+import ApiWeather from "@/components/Api-weather.vue";
 
 const todoText = ref([{ text: 'test', completed: false }, { text: 'tester', completed: false }]);
 const todoInput = ref('');
